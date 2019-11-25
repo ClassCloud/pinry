@@ -113,6 +113,7 @@ PUBLIC = True
 AUTHENTICATION_BACKENDS = [
     'users.auth.backends.CombinedAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
+    'django_auth_ldap.backend.LDAPBackend',
 ]
 
 LOGIN_URL = '/login/'
